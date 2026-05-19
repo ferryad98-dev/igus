@@ -38,7 +38,7 @@ def validasi_api(type_val, code, account_number):
             if r.status_code == 200:
                 return r.json()
             error = r.json()
-            pesan = error.get("data", {}).get("pesan") or error.get("pesan") or "Gagal validasi"
+            pesan = error.get("data", {}).get("pesan") or error.get("pesan") or "GAGAL VALIDASI, COBA CEK PAKAI BANK"
             if "SERVICE_UNAVAILABLE" in pesan.upper() and attempt == 0:
                 time.sleep(0.8)
                 continue
@@ -212,7 +212,7 @@ HTML = """
                             <i class="fas fa-check-circle text-6xl text-emerald-500"></i>
                         </div>
                         <div>
-                            <h2 class="text-4xl font-bold text-emerald-700 dark:text-emerald-400">Validasi Berhasil</h2>
+                            <h2 class="text-4xl font-bold text-emerald-700 dark:text-emerald-400">VALIDASI BERHASIL</h2>
                             <p class="text-emerald-600 dark:text-emerald-300">${label} • ${entityName}</p>
                         </div>
                     </div>
