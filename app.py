@@ -99,10 +99,11 @@ HTML = """
 <body class="bg-gradient-to-br from-slate-50 to-indigo-50 dark:from-slate-950 dark:to-slate-900 min-h-screen text-gray-900 dark:text-gray-100">
     <div class="max-w-2xl mx-auto pt-12 px-6">
         <div class="text-center mb-12">
-            <h1 class="text-6xl font-bold tracking-tighter bg-gradient-to-r from-indigo-600 via-purple-600 to-violet-600 bg-clip-text text-transparent">CEK CEK REK</h1>
-            <p class="mt-4 text-xl text-slate-600 dark:text-slate-400">Validasi rekening & e-wallet cepat dan aman</p>
+            <h1 class="text-6xl font-bold tracking-tighter bg-gradient-to-r from-indigo-600 via-purple-600 to-violet-600 bg-clip-text text-transparent">IGUS CEK CEK REK</h1>
+            <p class="mt-4 text-xl text-slate-600 dark:text-slate-400">Validasi Rekening & E-wallet cepat dan aman</p>
             <p class="mt-2 text-sm text-amber-600 dark:text-amber-400">
-                MEMPERMUDAH BUAT YANG CEK WD SAJA, JANGAN SCREENSHOT DARI SINI KALAU MAU EDIT/GANTI REKENING YA 🙂
+                MEMPERMUDAH BUAT YANG CEK WD SAJA, JANGAN SCREENSHOT DARI SINI KALAU MAU EDIT/GANTI REKENING YA 🙂 <br>
+                KALAU ADA ERROR HARAP MAKLUM
             </p>
         </div>
 
