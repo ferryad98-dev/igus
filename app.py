@@ -100,6 +100,11 @@ HTML = """
     <div class="max-w-2xl mx-auto pt-12 px-6">
         <div class="text-center mb-12">
             <h1 class="text-6xl font-bold tracking-tighter bg-gradient-to-r from-indigo-600 via-purple-600 to-violet-600 bg-clip-text text-transparent">IGUS CEK CEK REK</h1>
+            
+            <div class="flex justify-center mt-4">
+                <img src="/static/1.jpg" alt="Haha" class="h-32 w-auto object-contain rounded-xl shadow-md">
+            </div>
+
             <p class="mt-4 text-xl text-slate-600 dark:text-slate-400">Validasi Rekening & E-wallet cepat dan aman</p>
             <p class="mt-2 text-sm text-amber-600 dark:text-amber-400">
                 MEMPERMUDAH BUAT YANG CEK WD SAJA, JANGAN SCREENSHOT DARI SINI KALAU MAU EDIT/GANTI REKENING YA 🙂 <br>
@@ -112,7 +117,6 @@ HTML = """
             <button onclick="switchTab(1)" id="tab1" class="flex-1 py-5 text-lg font-semibold rounded-3xl transition-all flex items-center justify-center gap-3">💳 E-Wallet</button>
         </div>
 
-        <!-- Form Bank -->
         <div id="form-bank" class="relative">
             <div class="bg-white dark:bg-slate-800 rounded-3xl p-10 shadow-2xl border border-white/70 dark:border-slate-700">
                 <select id="bank-select" class="w-full p-6 text-lg rounded-2xl border border-slate-200 dark:border-slate-600 focus:border-indigo-500 mb-6"></select>
@@ -129,7 +133,6 @@ HTML = """
             </div>
         </div>
 
-        <!-- Form E-Wallet -->
         <div id="form-ewallet" class="relative hidden">
             <div class="bg-white dark:bg-slate-800 rounded-3xl p-10 shadow-2xl border border-white/70 dark:border-slate-700">
                 <select id="ewallet-select" class="w-full p-6 text-lg rounded-2xl border border-slate-200 dark:border-slate-600 focus:border-indigo-500 mb-6"></select>
@@ -159,8 +162,8 @@ HTML = """
         {% for nama, kode in bank_list.items() %}
             document.getElementById('bank-select').innerHTML += `<option value="{{kode}}">{{nama}}</option>`;
         {% endfor %}
-        {% for nama, kode in ewallet_list.items() %}
-            document.getElementById('ewallet-select').innerHTML += `<option value="{{kode}}">{{nama}}</option>`;
+        {% for nama, kode2 in ewallet_list.items() %}
+            document.getElementById('ewallet-select').innerHTML += `<option value="{{kode2}}">{{nama}}</option>`;
         {% endfor %}
 
         function switchTab(n) {
